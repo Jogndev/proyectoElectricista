@@ -1,0 +1,134 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+section {
+    margin: 50px;
+}
+
+h2 {
+    color: #3498db;
+    font-size: 1.8em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.imagenes {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    position: relative;
+}
+
+.muestra {
+    width: 60%;
+    display: inline-block;
+    margin-right: 10px;
+    border-radius: 10px; /* Nuevo: bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Nuevo: sombra suave */
+    transition: transform 0.3s ease; /* Nuevo: efecto de transición en hover */
+}
+
+.muestra:hover {
+    transform: scale(1.05); /* Nuevo: aumentar ligeramente el tamaño al pasar el ratón */
+}
+
+/* Estilos para los botones de anterior y siguiente */
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+    background-color: #2980b9;
+}
+
+.next-btn {
+    right: 0;
+}
+
+form {
+    display: grid;
+    grid-gap: 10px;
+    background-color: #fff; /* Nuevo: fondo blanco para el formulario */
+    padding: 20px; /* Nuevo: espacio interno en el formulario */
+}
+
+.enviar {
+    text-decoration: none;
+    color: white;
+}
+
+button {
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    margin: auto auto;
+    width: 60%;
+}
+
+button:hover {
+    background-color: #c0392b;
+}
+
+.contactoWhatsapp p {
+    text-align: center;
+    display: inline-flex;
+    padding: 2em;
+}
+
+.logoWhatsapp {
+    width: 9%;
+    padding-left: 30px;
+    margin: auto;
+    padding: 2em 2em;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 0.1em;
+    margin-top: 3em; /* Nuevo: margen superior para dar espacio al formulario */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
